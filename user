@@ -1,0 +1,45 @@
+show databases;
+
+use TUTORIAL;
+
+show tables;
+
+select * from board;
+select * from posts;
+
+DROP TABLE IF EXISTS board;
+
+desc board;
+
+RENAME TABLE userd TO user;
+
+ALTER TABLE board 
+CHANGE register register TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP;
+
+ALTER TABLE board CHANGE COLUMN id no INT NOT NULL AUTO_INCREMENT;
+
+SELECT * FROM board WHERE no = 1;
+
+TRUNCATE TABLE board;
+
+
+CREATE TABLE board (
+    no INT AUTO_INCREMENT PRIMARY KEY, -- 게시글 번호, 자동 증가
+    title VARCHAR(255) NOT NULL,       -- 게시글 제목
+    writer VARCHAR(100) NOT NULL,      -- 작성자
+    content TEXT NOT NULL,             -- 게시글 내용
+    register DATETIME NOT NULL,        -- 작성일
+    views INT DEFAULT 0                -- 조회수, 기본값 0
+);
+
+SELECT no, title, writer, content, register, views FROM board ORDER BY no DESC;
+
+
+FLUSH TABLES;
+
+INSERT INTO board (title, writer, content, register, views)
+VALUES ('테스트 제목', '관리자', '테스트 내용입니다.', NOW(), 0);
+
+rollback;
+
+commit;
