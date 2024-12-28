@@ -7,26 +7,6 @@
 <head>
     <meta charset="UTF-8">
     <title>게시글 보기</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .post-container {
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        .post-container h2 {
-            margin-top: 0;
-        }
-        .actions {
-            margin-top: 20px;
-        }
-        .actions button {
-            margin-right: 10px;
-        }
-    </style>
 </head>
 
 <body>

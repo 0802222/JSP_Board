@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-    <h2>환영합니다 멍</h2>
+
 <%
     // 초기화
 	Connection connection = null;

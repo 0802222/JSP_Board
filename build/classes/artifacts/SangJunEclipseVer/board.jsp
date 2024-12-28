@@ -8,40 +8,18 @@
     <meta charset="UTF-8">
     <title>게시판</title>
     <meta name="description" content="자유롭게 등록해보세요">
-    <style>
-        .container {
-            width: 740px;
-            margin: 20px auto;
-            padding: 10px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-        th {
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        .write-button {
-            text-align: right;
-            margin-bottom: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 <h1>게시판</h1>
 
 <!-- 로그아웃 버튼 -->
-<div class="write-button">
-    <button onclick="location.href='index.jsp'">로그아웃</button>
-</div>
+<button onclick="location.href='index.jsp'">로그아웃</button>
 
-<img src="images/dongdong.png" alt="장모치와와 동동이 사진">
+<div class="image-container">
+    <img src="images/dongdong.png" alt="장모치와와 동동이 사진">
+</div>
 
 <!-- 전체 컨테이너 -->
 <div class="container">

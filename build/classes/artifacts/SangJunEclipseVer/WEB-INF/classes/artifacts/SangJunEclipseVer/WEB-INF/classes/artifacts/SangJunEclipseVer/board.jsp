@@ -15,7 +15,9 @@
 <h1>게시판</h1>
 
 <!-- 로그아웃 버튼 -->
-<button onclick="location.href='index.jsp'">로그아웃</button>
+<div class="write-button">
+    <button onclick="location.href='index.jsp'">로그아웃</button>
+</div>
 
 <div class="image-container">
     <img src="images/dongdong.png" alt="장모치와와 동동이 사진">

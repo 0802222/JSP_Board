@@ -8,9 +8,10 @@
 <html lang="ko">
     <head>
         <title> 동동 게시판 </title>
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-
+    <h2>환영합니다 멍</h2>
 <%
     // 초기화
 	Connection connection = null;
@@ -56,17 +57,27 @@
     }
 %>
 
-<!-- 로그인 폼 -->
-<form action="loginAction.jsp" method="post" style="margin-bottom: 20px;">
-    <label for="userID">아이디:</label>
-    <input type="text" id="userID" name="userID" required>
-    <label for="userPassword">비밀번호:</label>
-    <input type="password" id="userPassword" name="userPassword" required>
-    <button type="submit">로그인</button>
-</form>
+<div class="image-container">
+    <img src="images/dongdonghi.jpeg" alt="장모치와와 동동이가 서있는 모습" height="350" width="500">
+</div>
 
-<!-- 회원가입 버튼 -->
-<button onclick="location.href='userJoin.jsp'">회원가입</button>
-    
+<!-- 로그인 폼 -->
+<div>
+    <form action="loginAction.jsp" method="post">
+        <label for="userID">ID:</label>
+        <input type="text" id="userID" name="userID" placeholder="ID를 입력해주세요."><br>
+
+        <label for="userPassword">PW:</label>
+        <input type="password" id="userPassword" name="userPassword" placeholder="PW를 입력해주세요."><br>
+
+        <input type="submit" value="Log in">
+    </form>
+    <!-- 회원가입 버튼 -->
+    <button onclick="location.href='userJoin.jsp'">회원가입</button>
+
+</div>
+
+
+
 </body>
 </html>
