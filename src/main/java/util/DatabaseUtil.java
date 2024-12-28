@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class DatabaseUtil {
-    private static final String URL = "jdbc:mysql://localhost:3306/test"; // 데이터베이스 URL
+    private static final String URL = "jdbc:mysql://localhost:3306/tutorial"; // 데이터베이스 URL
     private static final String USER = "root"; // 데이터베이스 사용자
     private static final String PASSWORD = "12345678"; // 데이터베이스 비밀번호
 
