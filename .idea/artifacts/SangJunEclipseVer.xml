@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SangJunEclipseVer">
+    <output-path>$PROJECT_DIR$/build/classes/artifacts/SangJunEclipseVer</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SangJunEclipseVer" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="SangJunEclipseVer/web/Web" />
+    </root>
+  </artifact>
+</component>
